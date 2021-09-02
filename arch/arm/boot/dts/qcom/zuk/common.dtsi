@@ -348,10 +348,7 @@
 &firmware {
 	android {
 		fstab {
-			vendor {
-                                dev = "/dev/block/platform/soc/7464900.sdhci/by-name/factory";
-				fsmgr_flags = "wait";
-			};
+			/delete-node/ vendor;
 			system {
 				compatible = "android,system";
                                 dev = "/dev/block/platform/soc/7464900.sdhci/by-name/system";
